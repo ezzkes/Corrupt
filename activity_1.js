@@ -1,0 +1,2 @@
+<button class="btn btn-warning" onclick="updateScore();">Update the score</button> <br> <br> <button class="btn btn-success" onclick="saveScore();">Save score</button> <br> <br> <button class="btn btn-info" onclick="nextPage();">Next page</button> </div> <script src="activity1.js"> </body> </html>
+score = 0; function updateScore() { score = score + 1; document.getElementById("score").innerHTML = "Score: " + score; } function saveScore() { localStorage.setItem("score", score); } function nextPage() { window.location = "activity_2.html"; }
